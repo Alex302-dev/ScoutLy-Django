@@ -31,10 +31,10 @@
   color: var(--color-text);
 }
 
-.form__label--hidden {
+/* .form__label--hidden {
   position: absolute;
   text-indent: -9999px;
-}
+} */
 
 input.input[type='text'],
 input.input[type='email'],
