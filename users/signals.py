@@ -21,7 +21,7 @@ def createProfile(sender, instance, created, **kwargs):
             email = user.email,
             name = user.first_name,
         )
-        subject = "Welcome to DevSearch!"
+        subject = "Welcome to Scoutly!"
         message = 'We are glad you are here'
         send_mail(
             subject,
