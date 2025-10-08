@@ -1,10 +1,10 @@
 :root {
-  --color-main: #5aa5b9;
-  --color-main-light: #e6faff;
-  --color-sub: #3f4156;
-  --color-sub-light: #51546e;
-  --color-sub-lighter: #ededfd;
-  --color-text: #737373;
+  --color-main: #000e2e;
+  --color-main-light: #c7ddfa;
+  --color-sub: #202C39;
+  --color-sub-light: #25435c;
+  --color-sub-lighter: #93d0fc;
+  --color-text: #737373;  
   --color-gray: #8b8b8b;
   --color-light: #e5e7eb;
   --color-light-gray: #767676;

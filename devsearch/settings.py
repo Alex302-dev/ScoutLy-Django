@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'projects',
     'users',
     'rest_framework',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
@@ -93,6 +94,8 @@ SIMPLE_JWT = {
 
 
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -201,3 +204,5 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = EMAIL_HOST_USER
 
 EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD 
+
+CORS_ALLOW_ALL_ORIGINS = True
