@@ -1,4 +1,4 @@
-Scoutly-Django is a web application built with Django that lets developers search, filter, and explore curated resources, projects, or tools. Features include:
+DevSearch-Django is a web application built with Django that lets developers search, filter, and explore curated resources, projects, or tools. Features include:
 
 REST API endpoints for searching & filtering by tags, categories, or keywords
 
