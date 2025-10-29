@@ -1,5 +1,4 @@
 {% extends 'main.html' %}
-
 {% block content %}
 
 <main class="profile my-md">
@@ -12,10 +11,7 @@
               <h2 class="dev__name">{{profile.name}}</h2>
               <p class="dev__title">{{profile.short_intro}}</p>
               <p class="dev__location">Based in {{profile.location}}</p>
-
-
               <ul class="dev__social">
-
                 {% if profile.social_github %}
                 <li>
                   <a title="Github" href="{{profile.social_github}}" target="_blank"><i class="im im-github"></i></a>
@@ -37,7 +33,6 @@
                 </li>
                 {% endif %}
               </ul>
-
               {% if request.user.profile.id != profile.id %}
               <a href="{% url 'create-message' profile.id %}" class="btn btn--sub btn--lg">Send Message </a>
               {% endif %}
@@ -52,14 +47,12 @@
           <div class="devInfo">
             <h3 class="devInfo__title">Skills</h3>
             <div class="devInfo__skills">
-
             {% for skill in topSkills %}
               <div class="devSkill">
                 <h4 class="devSkill__title">{{skill.name}}</h4>
                 <p class="devSkill__info">{{skill.description}}</p>
               </div>
              {% endfor %}
-
               <h3 class="devInfo__subtitle">Other Skills</h3>
               <div class="devInfo__otherSkills">
                 {% for skill in otherSkills %}
@@ -67,7 +60,6 @@
                   <small>{{skill}}</small>
                 </span>
                 {% endfor %}
-
               </div>
             </div>
           </div>
@@ -98,7 +90,6 @@
                 </div>
               </div>
                 {% endfor %}
-
             </div>
           </div>
         </div>
